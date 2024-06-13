@@ -1,0 +1,34 @@
+<div class="area-login-background d-none d-md-block"></div>
+
+<div class="area-form">
+    <form class="w-100">
+        <h1 class="titulo">Crud Users</h1>
+        <h2 class="subtitulo">Mais eficiência no controle de usuários</h2>
+        
+        <input 
+        type="text" 
+            [(ngModel)]="userName"
+            placeholder="digite seu nome"
+            [ngModelOptions]="{standalone: true}" 
+            class="input-form form-control w-100" 
+        >
+
+        <input 
+        type="password" 
+            [(ngModel)]="userPassword"
+            placeholder="***************"
+            [ngModelOptions]="{standalone: true}" 
+            class="input-form form-control w-100" 
+        >
+        
+        <div class="group-btn d-flex gap-3 justify-content-center">
+            <button 
+                (click)="login()"
+                class="btn btn-primary mobile" 
+                >Entrar
+            </button>
+            <button class="btn btn-success mobile" (click)="registar()">Registar</button>
+        </div>
+    </form>
+    <p class="footer"> <span>copy 2024</span> | Desenvolvendo <span>Seb App</span> </p>
+</div>
